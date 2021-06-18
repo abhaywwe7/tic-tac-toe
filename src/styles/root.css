@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.app {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board .board-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #000;
+}
+.board .board-row:last-child {
+  border-bottom: none;
+}
+.board .board-row .square {
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #000;
+  font-size: 2.5rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.board .board-row .square:last-child {
+  border-right: none;
+}
